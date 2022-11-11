@@ -1,0 +1,368 @@
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.emphasis {
+  color: #F7A4A4;
+}
+
+.bg-img{
+  background-image: url('img/pink-wall.jpg');
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  z-index: 1
+}
+
+.bg-img::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: .4;
+  z-index: -1;
+}
+/* Header */
+#header .nav-bar {
+  padding: 3% 14%;
+}
+#header .nav-list ul {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+}
+
+#header .nav-list ul li {
+  display: inline;
+}
+
+#header .nav-list a{
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+
+/* End Header */
+
+/* Title */
+.title-container {
+  max-width: 1300px;
+}
+
+.title-container h1 {
+  font-size: 3.5rem;
+  letter-spacing: .5rem;
+  font-weight: 500;
+  font-style: italic;
+  color: white;
+}
+
+.title-name {
+  margin: 8% 8% 10% 15%;
+}
+
+.title-container h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+}
+
+.title-container h4 {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #F7A4A4;
+}
+
+.title-info {
+  margin-left: 55%;
+  margin-top: -8%;
+  text-align: center;
+  background-color: black;
+}
+
+
+
+/* End Title */
+/* Services */
+#services {
+  text-align: center;
+}
+
+.services-title {
+  font-weight: lighter;
+  font-size: 3.5rem;
+  text-align: center;
+  color: black;
+  margin: 5% auto 5% auto;
+}
+
+.services-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 150px;
+}
+
+.service-item {
+  margin-bottom: 40px;
+}
+
+.services-item {
+  margin-bottom: 40px;
+}
+
+
+.icon {
+  width: 17%;
+}
+
+/* End Services */
+/* Reviews */
+#reviews {
+  background-image: url('img/pink-wall.jpg');
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1
+}
+
+#reviews::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: .4;
+  z-index: -1;
+}
+
+.carousel-item {
+  align-items: center;
+  color: white;
+}
+.reviews-text {
+  padding: 15% 10% 10px 10%;
+  font-size: 2rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.reviews-img {
+  width: 7%;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+
+.reviews-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 5% auto;
+}
+/* End Reviews */
+
+
+
+/* Popular Picks */
+.picks-title {
+  font-weight: lighter;
+  font-size: 3.5rem;
+  text-align: center;
+  color: black;
+  margin: 5% auto 10% auto;
+}
+
+.picks-img {
+  width: 80%;
+}
+
+.picks-row {
+  display: flex;
+  align-items: center;
+}
+
+.picks-container {
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+/* End Popular Picks */
+/* About Us */
+#about {
+  background-image: url('img/bwflower-background.jpg');
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+#about::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: .9;
+  z-index: -1;
+}
+
+.about-container {
+  display: inline-block;
+}
+
+.about-title h2 {
+  font-weight: lighter;
+  font-size: 3.5rem;
+  text-align: center;
+  color: white;
+  margin: 5% auto 5% auto;
+}
+.about-info {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 10% 15% 10% 15%;
+}
+
+.about-info2 {
+  margin-top: 50px;
+}
+
+.about-info3 {
+  margin-top: 50px;
+}
+
+.about-info4 {
+  margin-top: 60px;
+  font-weight: 300;
+}
+/* End About Us */
+
+/* Media Query for Mobile */
+@media only screen and (min-width:481px) and (max-width:768px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+#header .nav-bar {
+  padding: 2% 4%;
+}
+
+.title-name{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-info {
+  margin-left: 27%;
+  margin-right: 27%;
+  margin-top: -4%;
+}
+
+.services-title {
+  font-weight: lighter;
+  font-size: 3.5rem;
+  text-align: center;
+  color: black;
+  margin: 15% auto 10% auto;
+}
+
+.services-bottom {
+  margin-bottom: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.picks-container {
+  text-align: center;
+  margin: 15% auto 10% auto;
+}
+.picks-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.picks-img {
+  width: 60%;
+}
+.picks-item {
+  margin-bottom: 50px;
+}
+}
+/* Media Query for Tablet */
+@media only screen and (min-width:769px) and (max-width:1024px) {
+
+  .services-title {
+    margin-top: 100px;
+  }
+
+  .services-bottom {
+    margin-bottom: 100px;
+  }
+
+  .picks-container {
+    text-align: center;
+    margin: 100px auto 100px auto;
+  }
+
+  /* Services */
+  #services .services-bottom .service-item {
+    flex-basis: 45%;
+    margin: 2.5%;
+  }
+
+  #services .services-bottom .services-item {
+    flex-basis: 85%;
+    margin: 2.5% 20%;
+  }
+
+  .reviews-img {
+    width: 12%;
+    border-radius: 100%;
+    margin-right: 20px;
+  }
+  /* End Services */
+}
+
+/* Media Query for Desktop */
+@media only screen and (min-width:1024px) and (max-width:1400px) {
+
+  #services .services-bottom .services-item {
+    flex-basis: 75%;
+    margin: 2.5% 35%;
+}
+  #services .services-bottom .service-item {
+    flex-basis: 30%;
+    margin: 2.5% 4%;
+}
+.services-bottom {
+
+}
+.icon {
+  width: 17%;
+}
+
+}
